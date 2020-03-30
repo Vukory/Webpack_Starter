@@ -22,7 +22,7 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'Enter you income',
+        message: 'Enter your income',
         name: 'income',
         validate: (value) => value.match(/^\d+(\.\d{0,2})?$/) ? true : '[ERROR] Please input a number value (00.00).'
     }
@@ -55,5 +55,26 @@ function tax(paidValue) {
 
 console.log('Please input your earnings:');
 inquirer.prompt(questions)
-    .then(answers => console.log(answers))
+    .then((answers) => {
+
+        console.log(answers);
+        let income = Number(answers.income);
+        let annualIncome;
+        switch (answers.category) {
+            case 0:
+                annualIncome = income * 52;
+                break;
+            case 1:
+                annualIncome = income * 12;
+                break;
+            case 2:
+                annualIncome = income;
+                break;
+        }
+        console.log('Your annual income is:', annualIncome);
+
+        let result = tax(annualIncome);
+        console.log('Tax paid is:', result);
+
+    })
     .catch(error => console.error(error));
