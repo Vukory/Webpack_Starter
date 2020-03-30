@@ -11,8 +11,7 @@ const choices = [{
     {
         name: 'Annualy',
         value: 2
-    },
-
+    }
 ];
 
 const questions = [{
@@ -22,10 +21,10 @@ const questions = [{
         choices: choices
     },
     {
-        type: 'number',
+        type: 'input',
         message: 'Enter you income',
         name: 'income',
-        validate: (value) => !Number.isNaN(value)
+        validate: (value) => value.match(/^\d+(\.\d{0,2})?$/) ? true : '[ERROR] Please input a number value (00.00).'
     }
 ];
 
