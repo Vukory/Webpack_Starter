@@ -17,7 +17,7 @@ const choices = [{
 const questions = [{
         type: 'list',
         name: 'category',
-        message: 'Please select the cathegory of earnings:',
+        message: 'Please select the category of earnings:',
         choices: choices
     },
     {

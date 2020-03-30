@@ -1,7 +1,7 @@
 Tax Calculator ![Author Shield](https://img.shields.io/badge/Author-Vukory-blue)
 ================
 
-A simple tax calculator made using the british taxing system. 
+A simple tax calculator made using the British taxing system. 
 
 Tools
 ------
