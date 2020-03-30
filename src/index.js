@@ -74,7 +74,7 @@ inquirer.prompt(questions)
         console.log('Your annual income is:', annualIncome);
 
         let result = tax(annualIncome);
-        console.log('Tax paid is:', result);
+        console.log('Annual tax paid:', result);
 
     })
     .catch(error => console.error(error));
