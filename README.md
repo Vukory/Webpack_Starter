@@ -12,7 +12,7 @@ Demo
 ------
 You can run the calculator using the command
 
-```node ./src/index.js```
+```node ./src/calculator.js```
 
 ![Command Screenshot](https://github.com/Vukory/Webpack_Starter/blob/master/assets/images/Command.png "Command")
 
