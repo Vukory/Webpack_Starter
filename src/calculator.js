@@ -50,9 +50,6 @@ function tax(paidValue) {
     return taxCalc;
 }
 
-// var value_input = parseFloat(prompt("Paid: "));
-// console.log("Tax: " + tax(value_input));
-
 console.log('Please input your earnings:');
 inquirer.prompt(questions)
     .then((answers) => {
