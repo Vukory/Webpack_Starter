@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build": "webpack",
-        "clean": "rm -r dist/"
+        "clean": "rm -r dist/",
+        "lint": "npx eslint src/"
     },
     "author": "Vuki",
     "license": "ISC",
